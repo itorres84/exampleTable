@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ix9-cU-j50">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YHC-nT-hPg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YHC-nT-hPg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="04F-gT-C9o"/>
+                            <constraint firstItem="Ix9-cU-j50" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AhB-iK-vYB"/>
+                            <constraint firstItem="Ix9-cU-j50" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Faa-nu-HdU"/>
+                            <constraint firstItem="YHC-nT-hPg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MMH-p5-D0X"/>
+                            <constraint firstAttribute="bottom" secondItem="Ix9-cU-j50" secondAttribute="bottom" id="X3m-e5-dqr"/>
+                            <constraint firstItem="Ix9-cU-j50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zne-SI-cEv"/>
+                            <constraint firstItem="YHC-nT-hPg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bDz-Y3-MeU"/>
+                            <constraint firstItem="YHC-nT-hPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mZ9-LP-nLn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YHC-nT-hPg" id="rmn-j2-cTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="564" height="1064"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
